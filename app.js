@@ -24,4 +24,12 @@ app.post('/logthis', (req, res) => {
    res.status(200).send(toLog);
 });
 
+
+
+// Server
+app.listen(3000, () => {
+   console.log(`Listening on: http://localhost:${3000}`);
+});
+
+
 module.exports = app;
