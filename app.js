@@ -25,10 +25,10 @@ app.post('/logthis', (req, res) => {
 });
 
 
-
+let port=process.env.port||3000
 // Server
-app.listen(3000, () => {
-   console.log(`Listening on: http://localhost:${3000}`);
+app.listen(port, () => {
+   console.log(`Listening on: http://localhost:${port}`);
 });
 
 
